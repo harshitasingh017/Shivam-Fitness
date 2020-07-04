@@ -12,7 +12,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
 
-    <title>Shivam Fitness</title>
+    <title>Shivamfitnessguru</title>
     <style>
         .cover {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/cover1.jpg);
@@ -21,9 +21,9 @@
             background-position: center;
             background-attachment: fixed;
             width: 100%;
-            height: 470vh;
+            /* height: 470vh;*/
             animation: slider 30s infinite linear;
-            
+
         }
 
         .contact a {
@@ -62,17 +62,22 @@
 
 
         }
-@media screen and (max-width: 670px) {
-            .cover {
-               height: 980vh;
+
+        @media screen and (max-width: 670px) {
+
+            /*  .cover {
+               height: 885vh;
+            }*/
+            
+            
+            .contact h4 {
+                text-align: left;
             }
-    .contact h4{
-        text-align: left;
-    }
-    
-    .contact ul{
-        text-align: left;
-    }
+
+            .contact ul {
+                text-align: left;
+            }
+
     </style>
 </head>
 
@@ -80,9 +85,9 @@
     <div class="cover">
 
         <div class="navbar-fixed" style="position: fixed; top: 0;">
-            <nav class="nav-wrapper transparent lighten-1 ">
+            <nav class="nav-wrapper black lighten-1 ">
                 <div class="container">
-                    <a href="#" class="brand-logo">SHIVAM FITNESS</a>
+                    <a href="#" class="brand-logo logo">SHIVAM FITNESS</a>
                     <a href="#" class="sidenav-trigger" data-target="mobile-menu">
                         <i class="material-icons">menu</i>
                     </a>
@@ -164,13 +169,15 @@
                 </div>
             </div>
         </div>
-        
+
         <!---About----->
         <div class="about scrollspy" id="about">
+
             <h4 class="white-text center-align" style="font-family: monospace; padding-top: 50px;">Fitness is not a destination, it's a journey.</h4>
+            <hr class="red-text " style="width: 40%;">
             <div class="row">
                 <div class="col s12 l6">
-                    <img src="images/shivam.jpeg" class="responsive-img materialboxed" style="padding-top: 50px; height: 500px;">
+                    <img src="images/shivam.jpeg" class="responsive-img materialboxed" style="padding-top: 50px; height: 500px; padding-left: 50px;">
                 </div>
                 <div class="col s12 l6 pull-l1">
                     <p class="white-text center-align" style="padding-top: 10px; font-size: 25px;font-family: monospace;  text-align: justify;">MY STORY</p>
@@ -183,10 +190,57 @@
                 </div>
             </div>
         </div>
-<!----testimonials---->
+
+
+
+        <!-----At the Gym---->
+
+        <div class="atgym" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/c1.jpg); min-height: 70vh;">
+            <h4 class="white-text center-align" style="font-family: monospace; padding-top: 40px; font-size: 40px;">At the Gym</h4>
+            <hr class="red-text " style="width: 8%;">
+            
+                <div class="row">
+
+                    <div class="col s12 l3" style="padding-top: 20px;">
+                        <div class="card" >
+                            <a href="images/video1.mp4"><img class="responsive-img materialboxed" src="images/video11.gif"></a>
+                            
+                        </div>
+                        <p class="white-text center-align">Workout Anywhere</p>
+
+                    </div>
+
+                    <div class="col s12 l3" style="padding-top: 20px;">
+                        <div class="card" >
+                            <a href="images/video2.mp4"><img class="responsive-img materialboxed" src="images/video14.gif"></a>
+                        </div>
+                        <p class="white-text center-align">Workout Anytime</p>
+
+                    </div>
+
+                    <div class="col s12 l3" style="padding-top: 20px;">
+                        <div class="card">
+                            <a href="images/video3.mp4"><img class="responsive-img materialboxed" src="images/video15.gif" ></a>
+                        </div>
+                        <p class="white-text center-align">Workout Anyhow</p>
+
+                    </div>
+                    <div class="col s12 l3" style="padding-top: 20px;">
+                        <div class="card" >
+                            <a href="images/video4.mp4"><img class="responsive-img materialboxed" src="images/video13.gif"></a>
+                        </div>
+                        <p class="white-text center-align">Workout Anyway!</p>
+
+                    </div>
+
+                </div>
+            
+        </div>
+
+        <!----testimonials---->
         <div class="testimonials scrollspy" id="testimonials">
             <p class="white-text center-align" style="font-family: monospace; padding-top: 50px; font-size: 40px;">What Clients Say....</p>
-            
+
             <div class="carousel carousel-slider center">
                 <div class="carousel-item white-text  " style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/c1.jpg); min-height: 40vh; background-position: center; background-size: cover; background-repeat: no-repeat;" href="#one!">
                     <div class="container">
@@ -221,7 +275,7 @@
 
         </div>
 
-        
+
         <!-----Contact----->
 
         <div class="contact scrollspy" id="contact">
@@ -237,7 +291,7 @@
 
                     <h4 class="red-text center-align" style="font-family: monospace;">CONNECT</h4>
                     <ul class="center-align">
-                        <li class="white-text" style="font-family: serif; font-size: 18px;"><a  href="#" ><i class="fab fa-facebook" ></i></a>Facebook</li>
+                        <li class="white-text" style="font-family: serif; font-size: 18px;"><a href="#"><i class="fab fa-facebook"></i></a>Facebook</li>
                         <li class="white-text" style="font-family: serif; font-size: 18px;"><a class="white-text " href="#"><i class="fab fa-instagram"></i></a>Instagram</li>
                         <li class="white-text" style="font-family: serif; font-size: 18px;"><a class="white-text " href="#"><i class="fab fa-twitter"></i></a>Twitter</li>
                     </ul>
@@ -248,13 +302,15 @@
                     <a href="#" class="white-text" style="font-size: 18px; font-family: serif;"><i class="material-icons orange-text" style="padding-right: 20px;">call</i>8788966671</a><br>
                     <a href="#" class="white-text" style="font-size: 18px; font-family: serif;"><i class="material-icons orange-text" style="padding-right: 20px;">email</i>Shivfitness055@gmail.com</a><br>
                     <a href="#" class="white-text" style="font-size: 16px; font-family: serif;"><i class="material-icons orange-text" style="padding-right: 20px;">house</i>Viman Nagar, Pune Maharashtra 411014</a><br>
-                    
+
                 </div>
 
             </div>
         </div>
-<div class="footer center-align" style="background-color: gainsboro; margin-top: 40px; height: 42px; padding-top: 1px;"><h6 class="text-center">Copyright &copy; 2020, Design by Harshita Singh</h6></div>
-    
+        <div class="footer center-align" style="background-color: gainsboro; margin-top: 40px; height: 42px; padding-top: 1px;">
+            <h6 class="text-center">Copyright &copy; 2020, Design by Harshita Singh</h6>
+        </div>
+
     </div>
 
 
