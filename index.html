@@ -22,7 +22,7 @@
             background-attachment: fixed;
             width: 100%;
             /* height: 470vh;*/
-            animation: slider 30s infinite linear;
+          
 
         }
 
@@ -43,33 +43,14 @@
             color: #dd74ac;
         }
 
-        @keyframes slider {
-            35% {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/cover1.JPG);
-            }
-
-            50% {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/cover3.JPG);
-            }
-
-            85% {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/cover4.jpg);
-            }
-
-            90% {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/cover2.JPG);
-            }
-
-
-        }
-
+        
         @media screen and (max-width: 670px) {
 
             /*  .cover {
                height: 885vh;
             }*/
-            
-            
+
+
             .contact h4 {
                 text-align: left;
             }
@@ -77,6 +58,10 @@
             .contact ul {
                 text-align: left;
             }
+            .logo {
+              font-size: 0.7em;
+          }
+        }
 
     </style>
 </head>
@@ -84,10 +69,10 @@
 <body>
     <div class="cover">
 
-        <div class="navbar-fixed" style="position: fixed; top: 0;">
+        <header class="navbar-fixed" style="position: fixed; top: 0;">
             <nav class="nav-wrapper black lighten-1 ">
                 <div class="container">
-                    <a href="#" class="brand-logo logo" style="font-family: monospace;">Shivam Fitness Guru</a>
+                    <a href="#" class="brand-logo logo" style="font-family: monospace; ">ShivamFitnessGuru</a>
                     <a href="#" class="sidenav-trigger" data-target="mobile-menu">
                         <i class="material-icons">menu</i>
                     </a>
@@ -97,20 +82,20 @@
                         <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                    <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    
+
+                </div>
+
+            </nav>
+
+        </header>
+<ul class="sidenav grey lighten-2" id="mobile-menu">
                         <li><a class="sidenav-close" href="#services">Services</a></li>
                         <li><a class="sidenav-close" href="#about">About</a></li>
                         <li><a class="sidenav-close" href="#testimonials">Testimoniaks</a></li>
 
                         <li><a class="sidenav-close" href="#contact">Contact</a></li>
                     </ul>
-
-                </div>
-
-            </nav>
-
-        </div>
-
         <div class="covertext center-align" style="padding-top: 200px;">
             <p class="white-text" style="font-size: 70px; font-family:  monospace; font-weight: 800;">Shivam Tiwari</p>
             <p class="white-text" style="font-size: 30px; font-family: monospace;">Your new personal trainer</p>
@@ -193,48 +178,113 @@
 
 
 
-        <!-----At the Gym---->
+        <!-----Portfolio---->
 
         <div class="atgym" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/c1.jpg); min-height: 70vh;">
-            <h4 class="white-text center-align" style="font-family: monospace; padding-top: 40px; font-size: 40px;">At the Gym</h4>
+            <h4 class="white-text center-align" style="font-family: monospace; padding-top: 40px; font-size: 40px;">Portfolio</h4>
             <hr class="red-text " style="width: 8%;">
-            
-                <div class="row">
 
-                    <div class="col s12 l3" style="padding-top: 20px;">
-                        <div class="card" >
-                            <a href="images/video1.mp4"><img class="responsive-img materialboxed" src="images/video11.gif"></a>
-                            
-                        </div>
-                        <p class="white-text center-align">Workout Anywhere</p>
+            <h6 class="white-text center-align" style="font-family: monospace; padding-top: 40px; font-size: 40px;">Videos</h6>
+            <div class="row">
+
+                <div class="col s12 l3" style="padding-top: 20px;">
+                    <div class="card">
+                        <a href="images/video1.mp4"><img class="responsive-img materialboxed" src="images/video11.gif"></a>
 
                     </div>
-
-                    <div class="col s12 l3" style="padding-top: 20px;">
-                        <div class="card" >
-                            <a href="images/video2.mp4"><img class="responsive-img materialboxed" src="images/video14.gif"></a>
-                        </div>
-                        <p class="white-text center-align">Workout Anytime</p>
-
-                    </div>
-
-                    <div class="col s12 l3" style="padding-top: 20px;">
-                        <div class="card">
-                            <a href="images/video3.mp4"><img class="responsive-img materialboxed" src="images/video15.gif" ></a>
-                        </div>
-                        <p class="white-text center-align">Workout Anyhow</p>
-
-                    </div>
-                    <div class="col s12 l3" style="padding-top: 20px;">
-                        <div class="card" >
-                            <a href="images/video4.mp4"><img class="responsive-img materialboxed" src="images/video13.gif"></a>
-                        </div>
-                        <p class="white-text center-align">Workout Anyway!</p>
-
-                    </div>
+                    <p class="white-text center-align">Click image to see</p>
 
                 </div>
-            
+
+                <div class="col s12 l3" style="padding-top: 20px;">
+                    <div class="card">
+                        <a href="images/video2.mp4"><img class="responsive-img materialboxed" src="images/video14.gif"></a>
+                    </div>
+                    <p class="white-text center-align">Click image to see</p>
+
+                </div>
+
+                <div class="col s12 l3" style="padding-top: 20px;">
+                    <div class="card">
+                        <a href="images/video3.mp4"><img class="responsive-img materialboxed" src="images/video15.gif"></a>
+                    </div>
+                    <p class="white-text center-align">Click image to see</p>
+
+                </div>
+                <div class="col s12 l3" style="padding-top: 20px;">
+                    <div class="card">
+                        <a href="images/video4.mp4"><img class="responsive-img materialboxed" src="images/video13.gif"></a>
+                    </div>
+                    <p class="white-text center-align">Click image to see</p>
+
+                </div>
+
+            </div>
+            <!---Images----->
+            <h6 class="white-text center-align" style="font-family: monospace; padding-top: 20px; font-size: 40px;">Images</h6>
+            <div class="row">
+
+
+
+                <div class="col s12 l2" style="padding-top: 20px;">
+
+                    <a href="images/i2.jpeg"><img class="responsive-img materialboxed" src="images/i2.jpeg" style="height: 210px;"></a>
+
+
+                </div>
+
+                <div class="col s12 l2" style="padding-top: 20px;">
+
+                    <a href="images/i3.jpeg"><img class="responsive-img materialboxed" src="images/i3.jpeg" style="height: 210px; width: 200px;"></a>
+
+
+                </div>
+                <div class="col s12 l2" style="padding-top: 20px;">
+                   
+                        <a href="images/i4.jpeg"><img class="responsive-img materialboxed" src="images/i4.jpeg" style="height: 210px; width: 200px;"></a>
+                   
+
+
+                </div>
+                <div class="col s12 l2" style="padding-top: 20px;">
+                   
+                        <a href="images/i5.jpeg"><img class="responsive-img materialboxed" src="images/i5.jpeg" style="height: 210px; width: 200px;"></a>
+                    
+
+
+                </div>
+                <div class="col s12 l2" style="padding-top: 20px;">
+                    
+                        <a href="images/i6.jpeg"><img class="responsive-img materialboxed" src="images/i6.jpeg" style="height: 210px; width: 200px;"></a>
+                   
+
+
+                </div>
+
+                <div class="col s12 l2" style="padding-top: 20px;">
+                    
+                        <a href="images/i6.jpeg"><img class="responsive-img materialboxed" src="images/i7.jpeg" style="height: 210px; width: 200px;"></a>
+                    
+
+                </div>
+                <div class="row">
+                </div>
+                <div class="col s12 l2" style="padding-top: 20px;">
+
+                    <a href="images/i6.jpeg"><img class="responsive-img materialboxed" src="images/i8.jpeg" style="height: 210px; width: 200px;"></a>
+
+
+
+                </div>
+                <div class="col s12 l2" style="padding-top: 20px;">
+
+                    <a href="images/i6.jpeg"><img class="responsive-img materialboxed" src="images/i9.jpeg" style="height: 210px; width: 200px;"></a>
+</div>
+                <div class="col s12 l2" style="padding-top: 20px;">
+
+                    <a href="images/i6.jpeg"><img class="responsive-img materialboxed" src="images/i10.jpeg" style="height: 210px; width: 200px;"></a>
+ </div>
+            </div>
         </div>
 
         <!----testimonials---->
@@ -291,9 +341,9 @@
 
                     <h4 class="red-text center-align" style="font-family: monospace;">CONNECT</h4>
                     <ul class="center-align">
-                        <li class="white-text" style="font-family: serif; font-size: 18px;"><a href="#"><i class="fab fa-facebook"></i></a>Facebook</li>
-                        <li class="white-text" style="font-family: serif; font-size: 18px;"><a class="white-text " href="#"><i class="fab fa-instagram"></i></a>Instagram</li>
-                        <li class="white-text" style="font-family: serif; font-size: 18px;"><a class="white-text " href="#"><i class="fab fa-twitter"></i></a>Twitter</li>
+                        <li class="white-text" style="font-family: serif; font-size: 18px;"><a href="#"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;Facebook</li>
+                        <li class="white-text" style="font-family: serif; font-size: 18px;"><a class="white-text " href="#"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;Instagram</li>
+                        <li class="white-text" style="font-family: serif; font-size: 18px;"><a class="white-text " href="https://twitter.com/ShivamT23882977"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;Twitter</li>
                     </ul>
                 </div>
                 <div class="col s12 l4" style="padding-top: 40px;">
